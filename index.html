@@ -2,25 +2,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Wcap</title>
+	<title>Whitecap</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="icon" href="images/Whitecap.png"/>
-
-	<style type="text/css">
+	
+<style type="text/css">
 	
 body {
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 	border: none;
-	font: normal 15px/1 Tahoma, Geneva, sans-serif;
 	color: white;
 	text-align: center;
 	background: rgb(25,25,25);
+	font-family: Tahoma;
 }
 
+.title {
+	font-size: 1.875rem;
+	line-height: 1;
+	display: block;
+	-webkit-font-variant-ligatures: none;
+	-moz-font-variant-ligatures: none;
+	font-variant-ligatures: none;
+	letter-spacing: 6px;
+	font-family: "Arial Black";
+}
+
+.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
 
 .fa {
   	padding: 20px;
@@ -32,14 +50,40 @@ body {
   	border-radius: 100%;
   	cursor: pointer;
 	border: none;
-	color: black;
-	-webkit-box-shadow: 1px 1px 1px 1px #250D26;
+	color: white;
+	-webkit-box-shadow: 1px 1px 1px 1px #5b0769;
 }
 
 .fa-twitter {
   	background: rgb(25,25,25);
   	color: white;
 }
+
+.fa-instagram {
+  	background: rgb(25,25,25);
+  	color: white;
+}
+
+.fa-github {
+  	background: rgb(25,25,25);
+  	color: white;
+}
+
+.fa-telegram {
+	background: rgb(25, 25, 25);
+	color: white;
+}
+
+.fa-envelope-open-o {
+	background: rgb(25, 25, 25);
+	color: white;
+}
+
+.fa:hover {
+	background: #f8f8f8;
+	color: black;
+}
+
 
 
 </style>
@@ -48,15 +92,18 @@ body {
 <body>
 			
 <div align="center">
-	<br><img src="images/Whitecap.png" width="160" height="auto"><br><br>
-	<h2>Contact Me</h2>
+	<br><h2 class="title">WhiteCap</h2>
+	<br><img class="unselectable" draggable="false" ondragstart="return false;" src="images/Whitecap.png" width="160" height="auto"><br><br>
+	<h2>Contact Me</h2><br>
 </div>
 
-<div style="display: inline-block;">
+<div style="display: inline-block;" class="unselectable" draggable="false" ondragstart="return false;">
 
-	<a href="https://twitter.com/whitecapp_" class="fa fa-twitter"></a>
-
+	<a aria-label="Telegram account" title="Text me on Telegram" target="_blank" href="https://t.me/whitecappp" class="fa fa-telegram"></a>
+	<a aria-label="Mail me" title="Send me an email" target="_blank" href="mailto:Whitecapp@protonmail.com" class="fa fa-envelope-open-o"></a>
+	<a aria-label="Github profile" title="View my github profile" target="_blank" href="https://github.com/Whitecapp" class="fa fa-github"></a>
+	<a aria-label="Twitter profile" title="Follow me on Twitter" target="_blank" href="https://twitter.com/whitecapp_" class="fa fa-twitter"></a>
+	<a aria-label="Instagram profile" title="Follow me on Instagram" target="_blank" href="https://www.instagram.com/brddc/" class="fa fa-instagram"></a>
 </div>
-	
 </body>
 </html>
